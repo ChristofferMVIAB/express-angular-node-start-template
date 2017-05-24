@@ -1,0 +1,15 @@
+{
+  "name": "express-angular-node-start-template",
+  "version": "1.0.0",
+  "description": "Starting template for project using express, angularjs (1.X) and node.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christoffer Olsson",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "express": "^4.15.3"
+  }
+}
