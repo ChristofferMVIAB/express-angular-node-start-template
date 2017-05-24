@@ -10,4 +10,4 @@ npm install
 node app.js 
 ```
 
-Then you may browse the files using this url: localhost:3000/static/your_file.html
+Then you may browse the files using this url: localhost:3000/static/index.html
