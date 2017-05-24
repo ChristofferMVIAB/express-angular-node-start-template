@@ -10,6 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.4",
-    "express": "^4.15.3"
+    "angular-chosen": "^1.0.8",
+    "chosen-js": "^1.7.0",
+    "express": "^4.15.3",
+    "jquery": "^3.2.1"
   }
 }
