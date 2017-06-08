@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>express-angular-node-start-template</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="angular/angular.js" type='text/javascript'></script>
-    </head>
-    <body ng-app >
-        <h2>express-angular-node-start-template</h2>
-        <div>{{1 + 1}}</div>
-    </body>
+
+<head>
+    <title>express-angular-node-start-template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="angular/angular.js" type='text/javascript'></script>
+</head>
+
+<body ng-app>
+    <h2>express-angular-node-start-template</h2>
+    <button onclick="addCookies()">Add Cookies</button>
+    <button onclick="deleteCookies()">Delete Cookies</button>
+
+    <script>
+        function addCookies() {
+            document.cookie = "first=1";
+            document.cookie = "second=2";
+            document.cookie = "third=3";
+        }
+
+        function deleteCookies() {
+            var cookies = document.cookie.split(";");
+
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var equalPosition = cookie.indexOf("=");
+                var name = equalPosition > -1 ? cookie.substr(0, equalPosition) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+        }
+    </script>
+
+</body>
+
 </html>
