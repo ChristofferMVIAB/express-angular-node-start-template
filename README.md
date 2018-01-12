@@ -7,7 +7,7 @@ On first start run these commands:
 
 ``` 
 npm install 
-node app.js 
+node start
 ```
 
 Then you may browse the files using this url: localhost:3000/static/index.html

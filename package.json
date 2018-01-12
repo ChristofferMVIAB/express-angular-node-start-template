@@ -4,6 +4,7 @@
   "description": "Starting template for project using express, angularjs (1.X) and node.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Christoffer Olsson",
